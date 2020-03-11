@@ -20,3 +20,12 @@ const encounterTable = [
     {Level: 19, Easy: 2400, Medium: 4900, Hard: 7300, Deadly: 10900},
     {Level: 20, Easy: 2800, Medium: 5700, Hard: 8500, Deadly: 12700},
 ]
+
+const monsterNumberMultiplier = [
+    {Monsters: "1", ExpMultiplier: 1},
+    {Monsters: "2", ExpMultiplier: 1.5},
+    {Monsters: "3-6" , ExpMultiplier: 2},
+    {Monsters: "7-10", ExpMultiplier: 2.5},
+    {Monsters: "11-14", ExpMultiplier: 3},
+    {Monsters: "15+", ExpMultiplier: 4}
+]
