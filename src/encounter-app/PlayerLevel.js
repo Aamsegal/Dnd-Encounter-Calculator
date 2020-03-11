@@ -8,7 +8,6 @@ class PlayerLevelClass extends React.Component {
 
         for (let i = 0; i < playerLevels.length; i++) {
             let currentPlayerLevel = playerLevels[i] - 1;
-            console.log(currentPlayerLevel);
             
             groupExpThresholds.Easy = groupExpThresholds.Easy + this.props.infoTable[currentPlayerLevel].Easy;
             groupExpThresholds.Medium = groupExpThresholds.Medium + this.props.infoTable[currentPlayerLevel].Medium;

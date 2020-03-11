@@ -1,5 +1,6 @@
 import React from 'react';
 import PlayerLevel from './encounter-app/PlayerLevel'
+import MobList from './encounter-app/MobList'
 import encounterTable from './encounter-app/encounter-calculation-and-info'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       Then the class will add up all the exp values and apply the miltiplier
       from encounter-calculation-and-info.js*/}
       <div>Mob List</div>
+      <MobList />
 
       {/*This class will use the data gathered in both Player level list and
       Mob list to figure out the current difficulty of the mobs listed. It will
