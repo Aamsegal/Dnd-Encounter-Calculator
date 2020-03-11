@@ -1,4 +1,6 @@
 import React from 'react';
+import PlayerLevel from './encounter-app/PlayerLevel'
+import encounterTable from './encounter-app/encounter-calculation-and-info'
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       tell the user the difficulty of the fight, show the total exp and show
       the exp thresholds for the other difficulties*/}
       <div>Results</div>
+      <PlayerLevel  infoTable= {encounterTable}/>
     </main>
   );
 }

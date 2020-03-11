@@ -29,3 +29,5 @@ const monsterNumberMultiplier = [
     {Monsters: "11-14", ExpMultiplier: 3},
     {Monsters: "15+", ExpMultiplier: 4}
 ]
+
+export default encounterTable;
