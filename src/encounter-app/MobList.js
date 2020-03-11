@@ -5,18 +5,20 @@ class MobListClass extends React.Component {
     render() {
         const monsterList = [
             {Name: 'Bulbasaur', Level: 1, Exp: 80},
-            {Name: 'Bulbasaur', Level: 1, Exp: 80},
-            {Name: 'Bulbasaur', Level: 1, Exp: 80},
-            {Name: 'Ivesaur', Level: 1, Exp: 1400}
+            {Name: 'Charmander', Level: 1, Exp: 80},
+            {Name: 'Squirtle', Level: 1, Exp: 80}
         ]
 
         let monsterNumber = 0;
         let totalMonsterExp = 0;
+        let pokemonList = [];
 
         for (let i = 0; i < monsterList.length; i++) {
             monsterNumber = monsterNumber + 1;
 
             totalMonsterExp = totalMonsterExp + monsterList[i].Exp;
+
+            pokemonList.push(monsterList[i].Name);
         }
         console.log(totalMonsterExp);
 
@@ -40,10 +42,14 @@ class MobListClass extends React.Component {
         }
 
         return (
-            <ul>
-                <li>Number of monsters: {monsterNumber}</li>
-                <li>Total monster exp: {totalMonsterExp}</li>
-            </ul>
+            <div>
+                <h1>Mob List</h1>
+                <h3>Pokemon in the encounter {pokemonList}</h3>
+                <ul>
+                    <li>Number of monsters: {monsterNumber}</li>
+                    <li>Total monster exp: {totalMonsterExp}</li>
+                </ul>
+            </div>
         )
 
     }

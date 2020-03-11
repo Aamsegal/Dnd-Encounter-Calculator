@@ -3,7 +3,7 @@ import encounterTable from './encounter-calculation-and-info.js';
 
 class PlayerLevelClass extends React.Component {
     render() {
-        const playerLevels = [1,2,3];
+        const playerLevels = [1,1,1,1,1];
         const groupExpThresholds = { Easy: 0, Medium: 0, Hard: 0, Deadly: 0};
 
         for (let i = 0; i < playerLevels.length; i++) {
@@ -17,6 +17,9 @@ class PlayerLevelClass extends React.Component {
 
         return (
             <div>
+                <h1>Player Level List</h1>
+                <h2>Number of Player {playerLevels.length}</h2>
+                <h3>Group Exp</h3>
                 <ul>
                     <li>
                         Easy exp:   {groupExpThresholds.Easy}
