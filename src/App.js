@@ -2,11 +2,14 @@ import React from 'react';
 import PlayerLevel from './encounter-app/PlayerLevel'
 import MobList from './encounter-app/MobList'
 import Results from './encounter-app/Results'
+import UserInput from './encounter-app/userInput'
 import encounterTable from './encounter-app/encounter-calculation-and-info'
 
 function App() {
   return (
     <main className='App'>
+
+      <UserInput />
       {/*This class will allow the user to input how many players there are
       and then add up each players Easy, Medium, Hard and Deadly exp values for
       the groups exp per difficulty*/}
@@ -23,6 +26,9 @@ function App() {
       tell the user the difficulty of the fight, show the total exp and show
       the exp thresholds for the other difficulties*/}
       <Results />
+
+      {/*Add a progress bar for the difficulty*/}
+      <div>Additional Features</div>
     </main>
   );
 }

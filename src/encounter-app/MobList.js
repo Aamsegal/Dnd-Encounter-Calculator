@@ -12,7 +12,7 @@ class MobListClass extends React.Component {
             {Name: 'Charmander', Level: 1, Exp: 80},
             {Name: 'Squirtle', Level: 1, Exp: 80},
             {Name: 'Eevee', Level: 1, Exp: 80},
-            {Name: 'Pikachy', Level: 1, Exp: 80}
+            {Name: 'Pikachu', Level: 1, Exp: 80}
         ]
 
         //keeps track of how many monsters there are

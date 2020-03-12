@@ -1,4 +1,5 @@
 import React from 'react';
+import './PlayerLevel.css'
 import encounterTable from './encounter-calculation-and-info.js';
 
 class PlayerLevelClass extends React.Component {
@@ -25,7 +26,7 @@ class PlayerLevelClass extends React.Component {
         
         /*Returns html showing the the number of players and the group exp per difficulty*/
         return (
-            <div>
+            <div id='groupLevelInfo' className='groupLevelInfo'>
                 <h1>Player Level List</h1>
                 <h2>Number of Player {playerLevels.length}</h2>
                 <h3>Group Exp</h3>
