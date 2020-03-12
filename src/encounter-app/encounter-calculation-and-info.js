@@ -21,13 +21,4 @@ const encounterTable = [
     {Level: 20, Easy: 2800, Medium: 5700, Hard: 8500, Deadly: 12700},
 ]
 
-const monsterNumberMultiplier = [
-    {Monsters: "1", ExpMultiplier: 1},
-    {Monsters: "2", ExpMultiplier: 1.5},
-    {Monsters: "3-6" , ExpMultiplier: 2},
-    {Monsters: "7-10", ExpMultiplier: 2.5},
-    {Monsters: "11-14", ExpMultiplier: 3},
-    {Monsters: "15+", ExpMultiplier: 4}
-]
-
 export default encounterTable;

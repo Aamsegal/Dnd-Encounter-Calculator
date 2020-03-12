@@ -1,6 +1,7 @@
 import React from 'react';
 import PlayerLevel from './encounter-app/PlayerLevel'
 import MobList from './encounter-app/MobList'
+import Results from './encounter-app/Results'
 import encounterTable from './encounter-app/encounter-calculation-and-info'
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       compair the groups exp threshold to the total exp of the mobs listed and
       tell the user the difficulty of the fight, show the total exp and show
       the exp thresholds for the other difficulties*/}
-      <div>Results</div>
+      <Results />
     </main>
   );
 }

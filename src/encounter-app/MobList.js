@@ -1,4 +1,5 @@
 import React from 'react';
+import PokemonList from './pokemonList';
 
 class MobListClass extends React.Component {
 
@@ -6,7 +7,9 @@ class MobListClass extends React.Component {
         const monsterList = [
             {Name: 'Bulbasaur', Level: 1, Exp: 80},
             {Name: 'Charmander', Level: 1, Exp: 80},
-            {Name: 'Squirtle', Level: 1, Exp: 80}
+            {Name: 'Squirtle', Level: 1, Exp: 80},
+            {Name: 'Eevee', Level: 1, Exp: 80},
+            {Name: 'Pikachy', Level: 1, Exp: 80}
         ]
 
         let monsterNumber = 0;
@@ -44,9 +47,18 @@ class MobListClass extends React.Component {
         return (
             <div>
                 <h1>Mob List</h1>
-                <h3>Pokemon in the encounter {pokemonList}</h3>
+                <h3>Pokemon in the encounter</h3>
+
                 <ul>
-                    <li>Number of monsters: {monsterNumber}</li>
+                    {monsterList.map( pokemon => 
+                        <PokemonList
+                            content = {pokemon.Name}
+                        />
+                    )}
+                </ul>
+                
+                <ul>
+                    {/*<li>Number of monsters: {monsterNumber}</li>*/}
                     <li>Total monster exp: {totalMonsterExp}</li>
                 </ul>
             </div>
