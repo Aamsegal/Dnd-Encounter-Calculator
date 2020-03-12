@@ -4,6 +4,9 @@ import PokemonList from './pokemonList';
 class MobListClass extends React.Component {
 
     render() {
+
+        /*This value keeps track of monsters and their exp and level. This will eventually
+        be passed down as a prop from user input on the main page*/
         const monsterList = [
             {Name: 'Bulbasaur', Level: 1, Exp: 80},
             {Name: 'Charmander', Level: 1, Exp: 80},
@@ -12,19 +15,24 @@ class MobListClass extends React.Component {
             {Name: 'Pikachy', Level: 1, Exp: 80}
         ]
 
+        //keeps track of how many monsters there are
         let monsterNumber = 0;
-        let totalMonsterExp = 0;
-        let pokemonList = [];
 
+        //keeps track of the total exp of all the monsters
+        let totalMonsterExp = 0;
+
+        /*goes through the monsterList and adds up how many monsters there are and
+        the exp total*/
         for (let i = 0; i < monsterList.length; i++) {
             monsterNumber = monsterNumber + 1;
 
             totalMonsterExp = totalMonsterExp + monsterList[i].Exp;
-
-            pokemonList.push(monsterList[i].Name);
         }
         console.log(totalMonsterExp);
 
+        /*checks how many monsters there are and applies a multiplier to the group
+        monster exp based on how many monsters there are. The miltiplier numbers
+        come from the Dnd handbooks*/
         if (monsterNumber === 1) {
             totalMonsterExp = totalMonsterExp*1;
 
@@ -50,6 +58,8 @@ class MobListClass extends React.Component {
                 <h3>Pokemon in the encounter</h3>
 
                 <ul>
+                    {/*This will go through every index in monsterList and send down a prop
+                    that is the name of the current monster*/}
                     {monsterList.map( pokemon => 
                         <PokemonList
                             content = {pokemon.Name}
