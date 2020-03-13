@@ -6,7 +6,7 @@ class PlayerLevelClass extends React.Component {
     render() {
         /*This value keeps track of the levels of the party members. Later, props will be used
         to fill out this value based on user input*/
-        const playerLevels = [2,2,2,2,2];
+        const playerLevels = [2,2,2,2,2,2];
 
         /*This value keeps track of the groups total exp threshold per level.*/
         const groupExpThresholds = { Easy: 0, Medium: 0, Hard: 0, Deadly: 0};
